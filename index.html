@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentest Helper - LFI Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Pentest Helper Logo">
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Pentest Helper 🛠️</h1>
+            <p>Generador de Payloads LFI</p>
+        </div>
+
+        <div id="lfi-section">
+            <h2>LFI Payload Generator</h2>
+            <div class="input-group">
+                <label for="file-path-input">Ruta del archivo:</label>
+                <input type="text" id="file-path-input" placeholder="Ej. /etc/passwd" value="/etc/passwd" required>
+            </div>
+            <div class="input-group">
+                <label for="wrapper-select">Técnica de ofuscación:</label>
+                <select id="wrapper-select">
+                    <option value="">Ninguna</option>
+                    <option value="php-filter">php://filter</option>
+                    <option value="data-uri">data://</option>
+                </select>
+            </div>
+            
+            <button id="generate-btn">Generar Payload</button>
+            
+            <div id="result-section" class="hidden">
+                <div class="result-box">
+                    <pre><code id="payload-output"></code></pre>
+                    <button id="copy-btn">
+                        <span class="material-icons">content_copy</span> Copiar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

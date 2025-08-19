@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+.container {
+    background-color: #161b22;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #58a6ff;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #8b949e;
+}
+
+h2 {
+    color: #58a6ff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background-color: #010409;
+    color: #e6edf3;
+    font-size: 16px;
+    text-align: left;
+}
+
+button {
+    background-color: #238636;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-box {
+    background-color: #010409;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    position: relative;
+    text-align: left;
+}
+
+.result-box pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: #e6edf3;
+    margin: 0;
+    padding-right: 50px; /* Espacio para el botón de copiar */
+}
+
+#copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #30363d;
+    padding: 8px 12px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+#copy-btn:hover {
+    background-color: #444c56;
+}
